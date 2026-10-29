@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'ÉLITE | مرحباً بكم</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Cairo Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        darkBg: '#0b0e14',
+                        cardBg: '#151921',
+                        cardBorder: '#232936'
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0b0e14;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-white flex justify-center min-h-screen">
+
+    <!-- Container main layout: Max width for phone look, centered on desktop -->
+    <div class="w-full max-w-md bg-darkBg border-x border-cardBorder min-h-screen flex flex-col pb-10 relative">
+
+        <!-- Hero Section / Store Image Header -->
+        <div class="relative w-full h-80 overflow-hidden border-b border-cardBorder">
+            <!-- Store Image (You can change store-banner.jpg with your shop image) -->
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1000" alt="صورة المحل" class="w-full h-full object-cover">
+            
+            <!-- Dark Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-darkBg via-darkBg/60 to-transparent"></div>
+            
+            <!-- Status Badge -->
+            <div class="absolute top-4 right-4 bg-emerald-500/20 backdrop-blur-md border border-emerald-500/40 px-3 py-1 rounded-full text-emerald-400 text-xs font-semibold flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                مفتوح الآن لاستقبالكم
+            </div>
+            
+            <!-- Brand Logo Floating Badge -->
+            <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-2xl bg-cardBg border-2 border-gold flex items-center justify-center shadow-xl">
+                <i class="fa-solid fa-crown text-gold text-3xl"></i>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="p-5 pt-10 text-center space-y-6">
+
+            <!-- Welcome Header -->
+            <div>
+                <h1 class="text-2xl font-extrabold text-white">
+                    L'ÉLITE <span class="text-gold">MENSWEAR</span>
+                </h1>
+                <p class="text-xs text-gold font-semibold mt-1">عنوان الرجل العصري للأزياء الفاخرة</p>
+            </div>
+
+            <!-- Welcome Message Card -->
+            <div class="bg-cardBg border border-cardBorder rounded-2xl p-5 shadow-lg relative overflow-hidden">
+                <div class="absolute -top-10 -right-10 w-24 h-24 bg-gold/10 rounded-full blur-xl pointer-events-none"></div>
+                <h2 class="text-lg font-bold text-white mb-2 flex items-center justify-center gap-2">
+                    <span>✨</span> أهلاً بكم في عالم الأناقة
+                </h2>
+                <p class="text-xs text-gray-300 leading-relaxed">
+                    يسعدنا تواصلكم معنا! اختر الوسيلة المناسبة لك أدناه للاستفسار عن المقاسات، الأسعار، أو عروض الشتاء الحصرية.
+                </p>
+            </div>
+
+            <!-- Social & Contact Action Buttons -->
+            <div class="space-y-3">
+                <p class="text-xs font-bold text-gray-400 text-right pr-1">طرق التواصل السريعة:</p>
+
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/201080119834" target="_blank" class="flex items-center justify-between p-4 bg-emerald-600/15 border border-emerald-500/40 rounded-xl hover:bg-emerald-600/25 transition group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-500 flex items-center justify-center text-white text-xl">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="text-right">
+                            <h3 class="font-bold text-sm text-white">تواصل عبر الواتساب</h3>
+                            <p class="text-[10px] text-emerald-400">رد فوري على الاستفسارات والطلبات</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-left text-emerald-500 group-hover:-translate-x-1 transition-transform"></i>
+                </a>
+
+                <!-- Messenger Button -->
+                <a href="https://m.me/yourusername" target="_blank" class="flex items-center justify-between p-4 bg-blue-600/15 border border-blue-500/40 rounded-xl hover:bg-blue-600/25 transition group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-blue-500 flex items-center justify-center text-white text-xl">
+                            <i class="fa-brands fa-facebook-messenger"></i>
+                        </div>
+                        <div class="text-right">
+                            <h3 class="font-bold text-sm text-white">دردشة ماسنجر</h3>
+                            <p class="text-[10px] text-blue-400">تواصل مباشر عبر رسائل الصفحة</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-left text-blue-500 group-hover:-translate-x-1 transition-transform"></i>
+                </a>
+
+                <!-- Facebook Page Button -->
+                <a href="https://facebook.com/yourusername" target="_blank" class="flex items-center justify-between p-4 bg-indigo-600/15 border border-indigo-500/40 rounded-xl hover:bg-indigo-600/25 transition group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-600 flex items-center justify-center text-white text-xl">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="text-right">
+                            <h3 class="font-bold text-sm text-white">صفحتنا على فيسبوك</h3>
+                            <p class="text-[10px] text-indigo-400">تابع أحدث العروض والتشكيلات</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-left text-indigo-500 group-hover:-translate-x-1 transition-transform"></i>
+                </a>
+
+                <!-- Instagram Button -->
+                <a href="https://instagram.com/yourusername" target="_blank" class="flex items-center justify-between p-4 bg-pink-600/15 border border-pink-500/40 rounded-xl hover:bg-pink-600/25 transition group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 flex items-center justify-center text-white text-xl">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="text-right">
+                            <h3 class="font-bold text-sm text-white">حساب إنستغرام</h3>
+                            <p class="text-[10px] text-pink-400">شاهد الصور والإطلالات الجديدة</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-left text-pink-500 group-hover:-translate-x-1 transition-transform"></i>
+                </a>
+
+                <!-- Phone Call Button -->
+                <a href="tel:01080119834" class="flex items-center justify-between p-4 bg-gold/10 border border-gold/40 rounded-xl hover:bg-gold/20 transition group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-gold flex items-center justify-center text-darkBg font-bold text-xl">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="text-right">
+                            <h3 class="font-bold text-sm text-white">اتصال هاتفي مباشر</h3>
+                            <p class="text-[10px] text-gold">01080119834</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-left text-gold group-hover:-translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+
+            <!-- Address Location Card -->
+            <div class="bg-cardBg border border-cardBorder rounded-2xl p-4 text-right space-y-2">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-gold"></i>
+                    <h3 class="font-bold text-xs">عنوان المحل</h3>
+                </div>
+                <p class="text-[11px] text-gray-400 leading-relaxed">
+                    القاهرة - مدينة نصر - شارع عباس العقاد الرئيسي، بجوار مول الجامعة.
+                </p>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="p-4 text-center border-t border-cardBorder text-gray-500 text-[10px] mt-auto">
+            <p>© 2026 L'ÉLITE Menswear. جميع الحقوق محفوظة.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
